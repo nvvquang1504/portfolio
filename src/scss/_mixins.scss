@@ -1,0 +1,25 @@
+@import "variables";
+
+
+@mixin leftButton {
+    color: $cl-button;
+    border-radius: $radius-button;
+    &:hover {
+        color: $cl-button
+    }
+}
+
+;
+@mixin rightButton {
+    background-color: transparent;
+    border-color: rgb(24, 144, 255);
+    border-radius: 5px;
+    &:hover {
+        color: $cl-button;
+        background-color: rgb(24, 144, 255);
+    }
+}
+
+@mixin heightWithNav {
+    height: calc(100vh - 64px);
+}

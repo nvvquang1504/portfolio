@@ -1,0 +1,30 @@
+@import "../../scss/styles";
+
+@media screen and (min-width: 320px) {
+    .about-me {
+        height: 100%;
+    }
+}
+
+@media screen and(min-width: 768px) {
+    .about-me {
+        height: 80vh;
+    }
+}
+.detail-table {
+    & tr {
+        & td {
+            border-top: none;
+            padding:0.5rem;
+        }
+
+        & td:nth-child(1) {
+            font-weight: 600;
+        }
+
+        & td:nth-child(2) {
+            color: $detail-table-text-color-right;
+            font-weight: 600;
+        }
+    }
+}

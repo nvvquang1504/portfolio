@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import NavigationBar from "./components/NavigationBar";
+import MyCarousel from "./components/Carousel";
+import Introduction from "./components/Introduction";
+import MySkills from "./components/Skills";
+import MyProjects from "./components/MyProjects";
+import Footer from "./components/Footer";
+
+// import MyEducation from "./components/Education";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div id='home' style={{
+            overflowX: 'auto'
+        }} className="App">
+            <NavigationBar/>
+            <MyCarousel/>
+            <Introduction/>
+            <MySkills/>
+            <MyProjects/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;

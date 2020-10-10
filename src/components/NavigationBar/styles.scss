@@ -1,0 +1,11 @@
+.ant-drawer-header{
+    display: flex;
+    align-items: center;
+    height: 64px;
+    & .ant-drawer-title{
+        font-size: 24px;
+    }
+}
+.ant-drawer-body{
+    padding: 0 !important;
+}

@@ -1,0 +1,29 @@
+@import "../../scss/styles";
+@media screen and(min-width: 320px) {
+    .carousel-wrapper {
+        margin-top: 64px;
+        & .carousel-inner {
+            height: calc(100vh - 64px) !important;
+            & .left-button {
+                @include leftButton;
+                margin-right: 15px;
+            }
+            & .right-button {
+                @include rightButton;
+            }
+        }
+    }
+}
+.carousel-wrapper {
+margin-top: 64px;
+    & .carousel-inner {
+        height: calc(100vh - 64px) !important;
+        & .left-button {
+            @include leftButton;
+            margin-right: 15px;
+        }
+        & .right-button {
+            @include rightButton;
+        }
+    }
+}
